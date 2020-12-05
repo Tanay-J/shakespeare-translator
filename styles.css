@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+/* font-family: 'Sarina', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Goblin+One&display=swap');
+/* font-family: 'Goblin One', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+
+body {
+    margin: 2;
+    height: 100%; 
+    overflow: hidden;
+    
+}
+  .center-transition{
+    padding-top:8px;top:0;left:0; right:0;bottom:0;
+    position: relative;
+   }
+  
+  .static-img{
+    display:block;
+    width:250px; height:350px;
+    background-size:cover;
+    overflow: hidden;
+    position: relative;
+    background-image:url(images/shakes_og.jpeg);
+  }
+  .static-img:hover .transition-img{
+    display:block;
+    width:250px; height:350px;
+    background-size:cover;
+    /* position: relative; */
+    background-image: url(images/shakes_og_2.jpg);
+    
+  }
+  .static-img .transition-link
+  {
+    position: absolute;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 4px;
+    top: 80%;left:-84%;
+    font-size: 16px;
+    width: 98%;
+    transition: all 0.7s;
+  }
+  .static-img:hover .transition-link
+  {
+    background-color:white;
+    left:0px;
+  }
+
+  .static-img:hover .transition-link .link{
+      color:black;
+  }
+  
+
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 8vh;
+    text-align: center;
+    margin: 10px auto;
+    padding: 25px;
+}
+.container-center{
+    text-align: center;
+    margin: auto;
+    position: relative;
+    
+}
+#inputTxt{
+    border: 2px solid black;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 1vh;
+    margin: 10px auto;
+    /* position: relative; */
+}
+#outputTxt{
+    border: 2px solid black;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 1vh;
+    margin: 10px auto;
+}
+#btn{
+    background-color: black;
+    color: white;
+    border:2px solid black;
+    border-radius: 3vh;
+    display: block;
+    margin: 15px auto;
+    padding: 6px 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20pt;
+}
+.sec-btn{
+    border:2px solid black;
+    border-radius: 3vh;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 2px 8px;
+    text-decoration: none;
+    color: black;
+}
+
+#top, #bottom, #left, #right {
+    border: 12px solid black;
+    position: fixed;
+    margin:5px;
+	}
+	 #left, #right {
+		top: 0; bottom: 0;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; } 
